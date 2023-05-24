@@ -1,0 +1,16 @@
+@import "../../global.scss";
+
+.intro {
+  display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background-color: red;
+  background-image: url("../../../public/assets/images/baltos_006.png");
+  background-position: 50% 100%;
+  background-size: cover;
+  transition: all 0.1s linear;
+
+  @include mobile {
+    background-image: url("../../../public/assets/images/Dauba 5.png");
+  }
+}

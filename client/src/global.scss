@@ -1,0 +1,25 @@
+$mainColor: #15023a;
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: Foglihten;
+  src: url("../public/assets/fonts/Foglihten-nYZP.otf") format("opentype");
+}
+
+@font-face {
+  font-family: FogtwoN5;
+  src: url("../public/assets/fonts/Fogtwono5-Bzl8.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: BebaRegular;
+  src: url("../public/assets/fonts/BebasNeue-Regular.ttf") format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap");

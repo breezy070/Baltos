@@ -1,9 +1,9 @@
 @import "../../global.scss";
 
 .menu {
-  width: 345px;
+  width: 0px; //fixes bug where if menu not closed and change screen size the menu still appears
   height: 100vh;
-  background-color: $mainColor;
+  background-color: white;
   position: fixed;
   top: 0;
   right: -345px; //this is so it goes off the screen by the original width of 300px so its negative 300px
@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   transition: all 1s ease;
+  opacity: 0.9;
 
   @include mobile {
     width: 100%;
@@ -24,12 +25,13 @@
   }
 
   ul {
+    font-family: "Inria Serif", serif;
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 500;
-    color: white;
+    color: black;
     width: 60%;
 
     @include mobile {

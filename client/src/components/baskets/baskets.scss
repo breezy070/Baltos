@@ -8,11 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 100vh;
   background-color: white;
   position: relative;
-  // top: 90px;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   scrollbar-width: none; //for firefox
@@ -29,36 +27,61 @@
 
   .wrapper {
     width: 100vw;
-    height: 100%;
+    height: calc(100vh - 75px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     overflow-y: hidden;
+    position: absolute;
+    top: 75px;
+
+    @include mobile {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: calc(100vh - 75px);
+    }
 
     // background-color: blue;
 
     .left {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       height: 100%;
+
       overflow: hidden;
       position: relative;
       //   background-color: green;
       flex: 6;
 
+      @include mobile {
+        flex: 15;
+        align-items: flex-start;
+        height: calc(100vh - 75px);
+        display: block;
+      }
+
       .img-container {
         // overflow: hidden;
         // object-fit: cover;
-        max-width: 100%;
+        max-width: 70%;
         max-height: 100%;
         overflow: hidden;
-        padding: 7em;
+        // padding: 7em;
+        text-align: center;
+
+        @include mobile {
+          max-width: 100%;
+        }
 
         img {
           object-fit: cover;
-          max-width: 100%;
+          width: 100%;
+
+          @include mobile {
+            max-width: 100%;
+          }
 
           // display: block;
           // margin: auto;
@@ -73,16 +96,31 @@
       justify-content: center;
       flex-wrap: wrap;
       flex: 6;
-
+      overflow: hidden;
+      width: 100%;
       height: 100%;
+
+      @include mobile {
+        flex: 4;
+        align-content: space-between;
+      }
 
       .text-container {
         height: 460px;
         width: 460px;
+        overflow: hidden;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+
+        @include mobile {
+          height: 100%;
+          width: 100%;
+          justify-content: flex-start;
+          align-items: center;
+        }
 
         .title {
           // font-family: FogtwoN5;
@@ -92,6 +130,11 @@
           font-size: 37px; //10mm
           font-weight: 100;
           line-height: 1.3em;
+
+          @include mobile {
+            font-size: 30px;
+            flex-direction: row;
+          }
         }
 
         // .title2 {
@@ -104,6 +147,10 @@
           color: #929292;
           text-align: left;
           white-space: pre-wrap;
+
+          @include mobile {
+            display: none;
+          }
         }
 
         .basket-description {
@@ -112,19 +159,30 @@
           font-family: "Inria Serif", serif;
           color: #5a5a5a;
           font-size: 13px; //4mm
-          margin-top: 7em;
+
+          @include mobile {
+            display: none;
+          }
+          // margin-top: 7em;
+
+          // @include mobile {
+          //   margin-top: 0em;
+          // }
         }
 
         .outline-image-wrapper {
-          height: 460px;
-          width: 460px;
           overflow: hidden;
           position: absolute;
+
+          @include mobile {
+            align-items: center;
+            display: none;
+          }
 
           img {
             max-width: 100%;
             object-fit: cover;
-            min-width: 10%;
+            // min-width: 10%;
           }
         }
       }

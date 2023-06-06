@@ -1,13 +1,17 @@
 import "./vases.scss";
+import { BrowserRouter, Navigate, Routes, Route, Link } from "react-router-dom";
 
 export default function Vases(props) {
   console.log(props);
+  console.log("id: " + props.vase.id);
   return (
     <div className="vases" id="vases">
       <div className="wrapper">
         <div className="left">
           <div className="img-container">
-            <img src={props.vase.imgUrl} alt="" />
+            <Link to={`/artworks/categories/vases/${props.vase.id}`}>
+              <img src={props.vase.imgUrl} alt="" />
+            </Link>
           </div>
         </div>
         <div className="right">

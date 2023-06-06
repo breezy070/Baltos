@@ -6,6 +6,7 @@ import Artworks from "./components/artworks/Artworks";
 import Categories from "./components/categories/Categories";
 import ArtworkBaskets from "./components/artworks_baskets/ArtworksBaskets";
 import { useState } from "react";
+import Vaseprofile from "./components/vaseprofile/Vaseprofile";
 
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 
@@ -28,10 +29,19 @@ function App() {
           element={<Artworks />}
         ></Route>
         <Route
+          path="/artworks/categories/vases/:vaseId"
+          element={<Vaseprofile />}
+        ></Route>
+        <Route
           exact
           path="/artworks/categories/baskets"
           element={<ArtworkBaskets />}
         ></Route>
+        {/* <Route
+          exact
+          path="/artworks/categories/baskets/:id"
+          element={<Basketsprofile />}
+        ></Route> */}
         {/* <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
 
         {/* <div className="sections">

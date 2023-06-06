@@ -41,7 +41,6 @@ export default function Vaseprofile() {
             <p className="subtitle">
               {subtext.line1}
               <br></br>
-              <br></br>
             </p>
 
             <div className="vase-description">

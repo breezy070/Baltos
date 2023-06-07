@@ -57,8 +57,8 @@
   //   //   .img-container {
   //   //     // overflow: hidden;
   //   //     // object-fit: cover;
-  //   //     width: 460px;
-  //   //     height: 460px;
+  //   //     width: 100%;
+  //   //     height: 100%;
   //   //     overflow: hidden;
 
   //   //     img {
@@ -105,50 +105,53 @@
     @include mobile {
       flex-direction: column;
       flex-wrap: nowrap;
+      display: flex;
     }
 
-    gap: 0.3em;
+    // gap: 0.3em;
     // margin-bottom: 0.3em;
 
     .vases-cat {
       overflow: hidden;
-      width: 460px;
-      height: 460px;
+      width: 100%;
+      height: 100%;
 
       .img-container {
         position: relative;
         text-align: center;
-        max-width: 460px;
-        height: 460px;
+        max-width: 100%;
+        height: 100%;
         overflow: hidden;
 
         @include mobile {
-          width: 50%;
+          width: 100%;
           height: 100%;
-          margin: auto;
+          border: 1px solid black;
+          // text-align: center;
+          // margin: auto;
         }
 
         .title {
           position: absolute;
-          top: 20%;
+          top: 30%;
           left: 50%;
           transform: translate(-50%, -50%);
           text-decoration: none;
 
           @include mobile {
-            z-index: 5;
+            top: 50%;
           }
 
           a {
             text-decoration: none;
             font-family: "Inria Serif", serif;
-            font-size: 20px;
+            font-size: 30px;
             transition: all 0.3s;
             color: black;
           }
 
           a:hover {
-            font-size: 25px;
+            font-size: 35px;
             font-weight: bold;
             transition: all 1s smooth;
             color: black;
@@ -156,47 +159,66 @@
         }
 
         img {
-          width: 100%;
+          max-width: 100%;
           height: 100%;
-          object-fit: contain;
+          object-fit: cover;
+          transition: all 0.3s;
+          filter: blur(0.5px);
+          position: absolute;
+          right: 0;
+
+          @include mobile {
+            object-fit: contain;
+          }
+        }
+
+        img:hover {
+          transition: all 1s smooth;
+          scale: 1.1;
+          filter: blur(0);
         }
       }
     }
 
     .bowls-cat {
       overflow: hidden;
-      width: 460px;
-      height: 460px;
+      width: 100%;
+      height: 100%;
 
       .img-container {
         position: relative;
         text-align: center;
-        max-width: 460px;
-        height: 460px;
+        max-width: 100%;
+        height: 100%;
         overflow: hidden;
 
         @include mobile {
-          width: 50%;
+          width: 100%;
           height: 100%;
-          margin: auto;
+          border: 1px solid black;
+          // margin: auto;
         }
 
         .title {
           position: absolute;
-          top: 20%;
+          top: 30%;
           left: 50%;
           transform: translate(-50%, -50%);
+
+          @include mobile {
+            top: 50%;
+          }
 
           a {
             text-decoration: none;
             font-family: "Inria Serif", serif;
-            font-size: 20px;
+            font-size: 30px;
             transition: all 0.3s;
             color: black;
           }
 
           a:hover {
-            font-size: 25px;
+            font-size: 35px;
             font-weight: bold;
             transition: all 1s smooth;
             color: black;
@@ -205,9 +227,23 @@
       }
 
       img {
-        width: 100%;
+        max-width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
+        transition: all 0.3s;
+        filter: blur(0.5px);
+        position: absolute;
+        right: 0;
+
+        @include mobile {
+          object-fit: contain;
+        }
+      }
+
+      img:hover {
+        transition: all 1s smooth;
+        scale: 1.1;
+        filter: blur(0);
       }
     }
   }
@@ -215,38 +251,43 @@
   .baskets-cat {
     overflow: hidden;
 
-    width: 460px;
-    height: 460px;
+    width: 100%;
+    height: 100%;
 
     .img-container {
       position: relative;
       text-align: center;
-      max-width: 460px;
-      height: 460px;
+      max-width: 100%;
+      height: 100%;
       overflow: hidden;
 
       @include mobile {
-        width: 43%;
+        width: 100%;
         height: 100%;
-        margin: auto;
+        border: 1px solid black;
+        // margin: auto;
       }
 
       .title {
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @include mobile {
+          top: 50%;
+        }
 
         a {
           text-decoration: none;
           font-family: "Inria Serif", serif;
-          font-size: 20px;
+          font-size: 30px;
           transition: all 0.3s;
           color: black;
         }
 
         a:hover {
-          font-size: 25px;
+          font-size: 35px;
           font-weight: bold;
           transition: all 1s smooth;
           color: black;
@@ -254,47 +295,67 @@
       }
 
       img {
-        width: 70%;
+        max-width: 100%;
         height: 100%;
-        margin-top: 2em;
-        object-fit: scale-down;
+
+        object-fit: cover;
+        transition: all 0.3s;
+        filter: blur(0.5px);
+        position: absolute;
+        right: 0;
+
+        @include mobile {
+          object-fit: contain;
+        }
+      }
+
+      img:hover {
+        transition: all 1s smooth;
+        scale: 1.1;
+        filter: blur(0);
       }
     }
   }
   .sidetables-cat {
     overflow: hidden;
-    width: 460px;
-    height: 460px;
+    width: 100%;
+    height: 100%;
+    position: relative;
 
     .img-container {
       position: relative;
       text-align: center;
-      max-width: 460px;
-      height: 460px;
+      max-width: 100%;
+      height: 100%;
       overflow: hidden;
 
       @include mobile {
-        width: 50%;
+        width: 100%;
         height: 100%;
-        margin: auto;
+        border: 1px solid black;
+        // margin: auto;
       }
 
       .title {
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @include mobile {
+          top: 50%;
+        }
 
         a {
           text-decoration: none;
           font-family: "Inria Serif", serif;
-          font-size: 20px;
+          font-size: 30px;
           transition: all 0.3s;
           color: black;
         }
 
         a:hover {
-          font-size: 25px;
+          font-size: 35px;
           font-weight: bold;
           transition: all 1s smooth;
           color: black;
@@ -302,10 +363,23 @@
       }
 
       img {
-        width: 100%;
+        max-width: 100%;
         height: 100%;
+        // object-fit: cover;
+        transition: all 0.3s;
+        filter: blur(0.5px);
+        position: absolute;
+        right: 0;
 
-        object-fit: contain;
+        @include mobile {
+          object-fit: contain;
+        }
+      }
+
+      img:hover {
+        transition: all 1s smooth;
+        scale: 1.1;
+        filter: blur(0);
       }
     }
   }

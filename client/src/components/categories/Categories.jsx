@@ -33,29 +33,27 @@ function Categories() {
   return (
     <div className="categories">
       <div className="wrapper">
-        <div className="vases-cat">
-          <div className="img-container">
-            <img src="/assets/images/baltos_12-removebg-preview.png" alt="" />
-            <div className="title">
-              <Link to={"/artworks/categories/vases"}>Vases</Link>
-            </div>
-          </div>
-        </div>
         <div className="bowls-cat">
           <div className="img-container">
-            <img
-              src="/assets/images/Dauba_3_editedsmall-removebg-preview.png"
-              alt=""
-            />
+            <img src="/assets/images/Artworks_categories_Bowls_01.png" alt="" />
             <div className="title">
               <Link to={"/artworks/categories/bowls"}>Bowls</Link>
             </div>
           </div>
         </div>
+        <div className="vases-cat">
+          <div className="img-container">
+            <img src="/assets/images/Artworks_categories_Vases_01.png" alt="" />
+            <div className="title">
+              <Link to={"/artworks/categories/vases"}>Vases</Link>
+            </div>
+          </div>
+        </div>
+
         <div className="baskets-cat">
           <div className="img-container">
             <img
-              src="/assets/images/Krepsys_bowl_2021_01-removebg-preview.png"
+              src="/assets/images/Artworks_categories_Baskets_01.png"
               alt=""
             />
             <div className="title">
@@ -65,7 +63,10 @@ function Categories() {
         </div>
         <div className="sidetables-cat">
           <div className="img-container">
-            <img src="/assets/images/wide2-removebg-preview.png" alt="" />
+            <img
+              src="/assets/images/Artworks_categories_Side_tables_01.png"
+              alt=""
+            />
             <div className="title">
               <Link to={"/artworks/categories/sidetables"}>Side Tables</Link>
             </div>

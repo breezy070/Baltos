@@ -35,8 +35,8 @@ export default function Vaseprofile() {
           <div className="text-container">
             <h2 className="title">
               {title}
-              <br />
-              {subtitle}
+
+              {/* {subtitle} */}
             </h2>
             <p className="subtitle">
               {subtext.line1}

@@ -129,7 +129,7 @@
           width: 100%;
           // margin: 0em 1em 1em 1em;
           align-items: center;
-          justify-content: flex-end;
+          justify-content: space-between;
           margin-left: 0.5em;
           margin-right: 0.5em;
         }
@@ -150,7 +150,7 @@
           @include mobile {
             width: 100%;
             max-height: 100%;
-            line-height: 1em;
+            line-height: unset;
             display: flex;
             font-size: 30px;
             justify-content: flex-start;

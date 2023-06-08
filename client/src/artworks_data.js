@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    title: "Vase",
+    title: "Vase Kanjonas nr.06",
     subtitle: "Kanjonas nr.06",
     subtext: {
       line1:

@@ -36,6 +36,10 @@ function Categories() {
         <div className="bowls-cat">
           <div className="img-container">
             <img src="/assets/images/Artworks_categories_Bowls_01.png" alt="" />
+            {/* <img
+              src="/assets/images/Krepsys_bowl_2021_01-removebg-preview.png"
+              alt=""
+            /> */}
             <div className="title">
               <Link to={"/artworks/categories/bowls"}>Bowls</Link>
             </div>
@@ -44,6 +48,7 @@ function Categories() {
         <div className="vases-cat">
           <div className="img-container">
             <img src="/assets/images/Artworks_categories_Vases_01.png" alt="" />
+            {/* <img src="/assets/images/wide2-removebg-preview.png" alt="" /> */}
             <div className="title">
               <Link to={"/artworks/categories/vases"}>Vases</Link>
             </div>
@@ -56,6 +61,10 @@ function Categories() {
               src="/assets/images/Artworks_categories_Baskets_01.png"
               alt=""
             />
+            {/* <img
+              src="/assets/images/Krepsys_bowl_2021_01-removebg-preview.png"
+              alt=""
+            /> */}
             <div className="title">
               <Link to={"/artworks/categories/baskets"}>Baskets</Link>
             </div>

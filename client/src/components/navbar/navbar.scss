@@ -60,7 +60,6 @@
           width: 100%;
           display: flex;
           align-items: center;
-          font-size: 40px;
         }
       }
     }
@@ -72,10 +71,6 @@
       text-decoration: none;
       overflow: hidden;
       width: auto;
-
-      @include mobile {
-        height: 100%;
-      }
 
       .menu-items {
         // padding: 1.5em;
@@ -172,12 +167,10 @@
         justify-content: space-between;
         cursor: pointer;
         display: none;
-        // padding: 1.5em;
+        padding: 1.5em;
 
         @include mobile {
           display: flex;
-          align-items: center;
-          margin-right: 1.2em;
         }
 
         span {

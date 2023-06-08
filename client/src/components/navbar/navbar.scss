@@ -49,13 +49,17 @@
         transform: rotate(-90deg);
         text-decoration: none;
         font-family: BebaRegular;
-        font-size: 44.2px;
+        font-size: 44px;
         color: black;
         font-weight: lighter;
 
         @include mobile {
           transform: rotate(0deg);
           margin-left: 0.4em;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
         }
       }
     }

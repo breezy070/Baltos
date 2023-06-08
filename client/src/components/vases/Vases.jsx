@@ -18,8 +18,8 @@ export default function Vases(props) {
           <div className="text-container">
             <h2 className="title">
               {props.vase.title}
-              <br />
-              {props.vase.subtitle}
+              {/* <br />
+              {props.vase.subtitle} */}
             </h2>
             <p className="subtitle">
               {props.vase.subtext.line1}

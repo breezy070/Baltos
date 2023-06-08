@@ -21,12 +21,12 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <div className="socials-wrapper">
+      {/* <div className="socials-wrapper">
         <a href="https://www.instagram.com/baltos__/" target="_blank">
           <InstagramIcon className="instagram-icon"></InstagramIcon>
         </a>
-        {/* <div className="instagram">Suivez Baltos sur Instagram</div> */}
-      </div>
+        <div className="instagram">Suivez Baltos sur Instagram</div>
+      </div> */}
     </div>
   );
 }
